@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kargoApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+        <script src="app.js"></script>
+		
+		<style type="text/css">
+			table {
+				width:100%;
+			}
+		
+			td, th {
+				border:solid 1px gray;
+			}
+			
+			li {
+				float:left;
+				padding-right:25px;
+			}
+			
+			ul:after {
+				content : "";
+				clear: both;
+				display: block;
+			}
+		
+			.col-1 {
+				width: 10%;
+			} 
+			.col-2 {
+				width: 20%;
+			} 
+			.col-4 {
+				width: 40%;
+			} 
+			.col-6 {
+				width: 60%;
+			} 
+			.col-8 {
+				width: 80%;
+			} 
+		</style>
+    </head>
+	<ul>
+		<li><a href="#/"><h1>Home</h1></a></li>
+		<li><a href="#page1"><h1>Page 1</h1></a></li>
+        <body>
+     </ul>       
+            <ng-view></ng-view>
+            
+        </body>
+
+
+</html> 

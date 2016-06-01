@@ -1,55 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="kargoApp">
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
-        <script src="app.js"></script>
-		
-		<style type="text/css">
-			table {
-				width:100%;
-			}
-		
-			td, th {
-				border:solid 1px gray;
-			}
-			
-			li {
-				float:left;
-				padding-right:25px;
-			}
-			
-			ul:after {
-				content : "";
-				clear: both;
-				display: block;
-			}
-		
-			.col-1 {
-				width: 10%;
-			} 
-			.col-2 {
-				width: 20%;
-			} 
-			.col-4 {
-				width: 40%;
-			} 
-			.col-6 {
-				width: 60%;
-			} 
-			.col-8 {
-				width: 80%;
-			} 
-		</style>
-    </head>
-	<ul>
-		<li><a href="#/"><h1>Home</h1></a></li>
-		<li><a href="#page1"><h1>Page 1</h1></a></li>
-        <body>
-     </ul>       
-            <ng-view></ng-view>
-            
-        </body>
-
-
-</html> 
+<!DOCTYPE html>
+<html lang="en" ng-app="kargoApp">
+    <head>
+        <title>Kargo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#/">Kargo</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#/">Home</a></li>
+                  <li><a href="#posts">List Posts</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+        <ng-view></ng-view>
+        </div>
+
+    </body>
+
+
+
+</html>
